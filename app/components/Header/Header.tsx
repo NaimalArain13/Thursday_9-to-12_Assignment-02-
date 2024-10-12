@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-5 w-full bg-white text-black flex justify-center items-center shadow-md md:hidden p-4">
+        <div className="absolute top-16 left-0 w-full bg-white text-black flex justify-center items-center shadow-md md:hidden p-4">
           <nav className="flex flex-col items-center space-y-4 py-4">
             {routes.map((route, index) => (
               <Link

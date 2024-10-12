@@ -73,7 +73,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex flex-col w-full max-w-3xl p-2 space-y-1">
-            <h1 className="font-bold text-xl  mb-2">Suuport</h1>
+            <h1 className="font-bold text-xl  mb-2">Support</h1>
             <Link href="#" className="text-gray-700 hover:text-yellow-500">
               End-User License Agreement (EULA)
             </Link>
