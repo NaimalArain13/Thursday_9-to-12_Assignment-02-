@@ -55,13 +55,13 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-12 w-full bg-white text-black flex items-center shadow-md md:hidden p-4">
+        <div className="absolute top-16 left-5 w-full bg-white text-black flex justify-center items-center shadow-md md:hidden p-4">
           <nav className="flex flex-col items-center space-y-4 py-4">
             {routes.map((route, index) => (
               <Link
                 href={route.href}
                 key={index}
-                className={`w-full text-left py-2 ${
+                className={`w-full text-center py-2 ${
                   pathname === route.href?
                  "text-yellow-500 font-bold" : "hover:text-yellow-500"
                 }`}
@@ -70,10 +70,10 @@ export default function Header() {
                 {route.name}
               </Link>
             ))}
-            <div className="flex flex-col space-y-5">
+            <div className="flex flex-col text-center space-y-5">
         <Button variant={"ghost"} className="underline underline-offset-2 text-lg">Login</Button>
-        <Button className="rounded-full p-6 px-9 font-bold  bg-yellow-500 text-black">Sign-up</Button>
-        <Button className="rounded-full p-6 px-9 font-bold">Book a Demo</Button>
+        <Button className="rounded-full p-6 px-9 font-bold  bg-yellow-500 text-black">SIGN-UP</Button>
+        <Button className="rounded-full p-6 px-9 font-bold">BOOK A DEMO</Button>
         </div>
           </nav>
         </div>
